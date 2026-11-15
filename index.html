@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Platformer Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="startScreen">
+        <h1>The Lanister</h1>
+        <button id="startButton">Start the Game</button>
+    </div>
+    <div id="levelComplete">
+        <h1>Level Complete!</h1>
+        <p id="levelCompleteMessage"></p>
+        <button id="continueButton">Continue to Next Level</button>
+        <button id="restartButton">Restart Game</button>
+    </div>
+    <div id="gameContainer">
+        <div class="background clouds"></div>
+        <div class="background mountains"></div>
+        <div class="background bushes"></div>
+        <canvas id="gameCanvas" width="800" height="600" tabindex="0"></canvas>
+        <div id="ui">
+            <div id="level">Level: 1</div>
+            <div id="score">Score: 0</div>
+            <div id="lives">Lives: 3</div>
+        </div>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="./assets/Backsound.mp3" type="audio/mpeg">
+    </audio>
+</body>
+<script src="game.js"></script>
+</html>
